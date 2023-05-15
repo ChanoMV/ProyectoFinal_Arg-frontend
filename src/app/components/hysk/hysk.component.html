@@ -1,0 +1,135 @@
+<div class="row">
+  
+  <h1>Hard & soft skills</h1>
+<div class="col-lg-2">
+  <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva skill</button>
+</div>
+  
+<div class="row container-fluid">
+     <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
+      <circle-progress
+      [percent]="(skill.porcentaje)"
+      [radius]="100"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#4882c2'"
+      [innerStrokeColor]="'#e2bde9'"
+      [animation]="true"
+      [animationDuration]="700"
+      [imageSrc]="''"
+      [title]="skill.nombreSK"
+      [showTitle]="true"
+      [titleColor]="'#212F3C'"
+      [showImage]="false"
+      [imageHeight]="100"
+      [imageWidth]="100"
+    ></circle-progress>
+
+    <button id="edit">
+      <td> <button class="btn btn-light" routerLink="/editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
+    </button>
+    <br>
+    <button id="delete">
+      <td> <button class="btn btn-danger" (click)="delete(skill.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill"></i></button>
+    </button>
+    </div>
+</div>
+   
+   <!--   <circle-progress
+      [percent]="90"
+      [radius]="100"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#4882c2'"
+      [innerStrokeColor]="'#e2bde9'"
+      [animation]="true"
+      [animationDuration]="700"
+      [imageSrc]="'https://i.ibb.co/8BxwWHM/html.png'"
+      [showImage]="true"
+      [imageHeight]="100"
+      [imageWidth]="100"
+    ></circle-progress>
+    </div>
+
+   <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+          [percent]="85"
+          [radius]="100"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'#4882c2'"
+          [innerStrokeColor]="'#e2bde9'"
+          [animation]="true"
+          [animationDuration]="700"
+          [imageSrc]="'https://i.ibb.co/gPHqSy4/CSS.png'"
+          [showImage]="true"
+          [imageHeight]="100"
+          [imageWidth]="100"
+        ></circle-progress>
+        </div>
+        <div class="text-center col-sm-4 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="60"
+              [radius]="100"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'#4882c2'"
+              [innerStrokeColor]="'#e2bde9'"
+              [animation]="true"
+              [animationDuration]="700"
+              [imageSrc]="'https://i.ibb.co/3ztT9nZ/js.png'"
+              [showImage]="true"
+              [imageHeight]="100"
+              [imageWidth]="100"
+            ></circle-progress>
+            </div>
+            <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                <circle-progress
+                  [percent]="70"
+                  [radius]="100"
+                  [outerStrokeWidth]="16"
+                  [innerStrokeWidth]="8"
+                  [outerStrokeColor]="'#4882c2'"
+                  [innerStrokeColor]="'#e2bde9'"
+                  [animation]="true"
+                  [animationDuration]="700"
+                  [imageSrc]="'https://i.ibb.co/2vGfNnJ/git.png'"
+                  [showImage]="true"
+                  [imageHeight]="100"
+                  [imageWidth]="100"
+                ></circle-progress>
+                </div>
+                <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                    <circle-progress
+                      [percent]="65"
+                      [radius]="100"
+                      [outerStrokeWidth]="16"
+                      [innerStrokeWidth]="8"
+                      [outerStrokeColor]="'#4882c2'"
+                      [innerStrokeColor]="'#e2bde9'"
+                      [animation]="true"
+                      [animationDuration]="700"
+                      [imageSrc]="'https://i.ibb.co/GxGV1zC/eng.png'"
+                      [showImage]="true"
+                      [imageHeight]="100"
+                      [imageWidth]="100"
+                    ></circle-progress>
+                    </div>
+                    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+                        <circle-progress
+                          [percent]="95"
+                          [radius]="100"
+                          [outerStrokeWidth]="16"
+                          [innerStrokeWidth]="8"
+                          [outerStrokeColor]="'#4882c2'"
+                          [innerStrokeColor]="'#e2bde9'"
+                          [animation]="true"
+                          [animationDuration]="700"
+                          [imageSrc]="'https://i.ibb.co/Xy7p1bS/grupal.png'"
+                          [showImage]="true"
+                          [imageHeight]="100"
+                          [imageWidth]="100"
+                        ></circle-progress>
+                        </div>
+</div>-->
+

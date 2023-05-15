@@ -1,0 +1,20 @@
+.row, h1{
+    width: 100%;
+    padding: 20px;
+    padding-right: 35px;
+    background-color: #a1b5cb;
+    margin: 0 0 0 0;
+    text-align: center;
+    }
+
+
+#edit{
+    background-color: #a1b5cb;
+    border: transparent;
+    
+}
+
+#delete{
+    background-color: #a1b5cb;
+    border: transparent;
+}

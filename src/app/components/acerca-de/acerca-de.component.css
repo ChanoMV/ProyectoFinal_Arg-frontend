@@ -1,0 +1,57 @@
+#col2{
+    margin-left: 0px;
+    margin-top: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#col3{
+    margin-top: 29px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+    
+.row{
+    width: 100%;
+    background-color:  #a1b5cb;
+       text-align:center;
+    padding: 20px 15px 70px;
+    margin: 0 0 0 0;
+    
+}
+h1{
+    text-align: center;
+}   
+
+#nombre{
+    font-weight:bold;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+@media(min-width:576px){
+    #fotoDePerfil{
+        position: relative;
+        width: 120%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px gray;
+        left: 30%;
+        margin-top: -50%;
+        }
+    }
+   
+   
+
+@media(max-width:576px){
+    #fotoDePerfil{
+        position:relative;
+        width: 40%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px gray;
+        top: -6%;
+        left: 3%;
+        
+    }
+    #col2{
+        margin-top: -6%;
+    }
+}

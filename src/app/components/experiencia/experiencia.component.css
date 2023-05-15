@@ -1,0 +1,25 @@
+.row{
+    width: 100%;
+    border: transparent;
+    background-color:  #a1b5cb;
+    padding: 50px;
+    padding-left: 70px;
+    margin: 0 0 0 0;
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+    margin-top: 0px;
+    font-size: 230%;
+    font-weight: lighter;
+    left:10px;
+     border: #a1b5cb;
+}
+h2, h3{
+    display: inline;
+    font-weight: lighter;
+}
