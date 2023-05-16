@@ -11,7 +11,7 @@ import { SkillService } from 'src/app/service/skill.service';
 })
 export class NewSkillComponent implements OnInit {
   nombreSK: string;
-  porcentaje: number = 0;
+  porcentaje: number;
 
   constructor(private skillS: SkillService, private router: Router) {
 

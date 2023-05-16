@@ -7,7 +7,14 @@
     margin: 0 0 0 0;
 }
 
-
+#nueva{
+    padding-bottom: 3%;
+    
+}
+table{
+    display: table;
+    align-items: center;
+}
 
 h1{
     display: flex;

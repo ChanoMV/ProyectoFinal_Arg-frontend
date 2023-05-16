@@ -7,6 +7,10 @@
     margin: 0 0 0 0;
 }
 
+#nueva{
+    padding-bottom: 3%;
+}
+
 h1{
     display: flex;
     justify-content: center;
