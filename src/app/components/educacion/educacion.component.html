@@ -11,15 +11,15 @@
     
    
      <div class="table-responsive">
-    <table class="table col-sm-4 col-md-6 col-lg-10">
+    <table class="table col-12">
         <tbody>
             <tr *ngFor="let Educacion of educ">
-                <td><h4>{{Educacion.nombreEdu}}</h4></td>
-                <td>{{Educacion.descripcionEdu}}</td>
-                <td> <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+                <td><h4 class="text-center">{{Educacion.nombreEdu}}</h4></td>
+                <td class="text-center">{{Educacion.descripcionEdu}}</td>
+                <td> <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
                 </td>
                 <td>
-                    <td> <button class="btn btn-danger" (click)="delete(Educacion.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill"></i> BORRAR</button>
+                    <td> <button class="btn btn-danger" (click)="delete(Educacion.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill"></i></button>
                     </td>
             </tr>
         </tbody>

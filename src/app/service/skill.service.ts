@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SkillService {
-  
+  static detail(id: any){}
   URL= environment.URL +'/skills';
   constructor(private httpClient: HttpClient) { }
 
@@ -20,7 +20,7 @@ export class SkillService {
   }
 
   public save(skill: Skill): Observable<any>{
-    return this.httpClient.post<any>(this.URL + '/create', skill);
+    return this.httpClient.post<any>(this.URL + `/create`, skill);
   }
 
   public update(id: number, skills: Skill): Observable<any>{

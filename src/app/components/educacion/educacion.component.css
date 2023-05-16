@@ -1,6 +1,6 @@
 .row{
     width: 100%;
-    border: transparent;
+    
     background-color:  #a1b5cb;
     padding: 50px;
     padding-left: 70px;
@@ -10,6 +10,16 @@
 #nueva{
     padding-bottom: 3%;
 }
+
+.btn-light{
+    border-radius: 100%;
+    width: auto;
+}
+.btn-danger{
+    border-radius: 100%;
+    width: auto;
+}
+
 
 h1{
     display: flex;
