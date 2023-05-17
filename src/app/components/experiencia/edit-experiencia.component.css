@@ -1,0 +1,28 @@
+.div{
+    background-color: #a1b5cb;
+}
+
+
+.row{
+margin: 15% 0 0 40%;
+padding-left: 0%;
+padding-right: 35%;
+
+}
+
+.form{
+    padding-top: 3%;
+    padding-bottom:3%;
+    width: 100%;
+}
+
+
+label{
+    font-weight: bolder;
+}
+
+html{
+    background-color: #a1b5cb;
+    height: auto;
+    width: auto
+}
