@@ -13,6 +13,6 @@ export const environment={
   },
     production: false,
 
-    //URL: 'http://localhost:8080', 
-    URL: 'https://proyectofinalarg-backend-production.up.railway.app/',
+    URL: 'http://localhost:8080', 
+    //URL: 'https://proyectofinalarg-backend-production.up.railway.app',
 }
