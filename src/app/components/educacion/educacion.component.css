@@ -34,3 +34,8 @@ h2, h3{
     display: inline;
     font-weight: lighter;
 }
+@media(max-width:400px){
+    button{
+     margin-left: 16%;
+    }
+}

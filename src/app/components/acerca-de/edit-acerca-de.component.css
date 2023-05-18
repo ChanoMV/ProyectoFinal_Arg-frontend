@@ -4,7 +4,7 @@
 
 
 .row{
-margin: 15% 0 0 40%;
+margin: 5% 0 0 35%;
 padding-left: 0%;
 padding-right: 35%;
 
@@ -15,10 +15,20 @@ padding-right: 35%;
     padding-bottom:3%;
     width: 100%;
 }
+.imagen{
+    margin-left: 28%;
+}
+
 
 
 label{
     font-weight: bolder;
+    text-align: center;
+    margin-left: 35%;
+}
+button{
+    margin-left: 25%;
+    margin-top: 2%;
 }
 
 html{

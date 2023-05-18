@@ -15,11 +15,11 @@ import { Observable } from "rxjs";
 export class LoginComponent implements OnInit {
   isLogged = false;
   isLogginFail = false;
-  loginUsuario!: LoginUsuario;
-  nombreUsuario!: string
-  password!: string
+  loginUsuario: LoginUsuario;
+  nombreUsuario: string= '';
+  password: string= '';
   roles: string[] = [];
-  errMsj!: string;
+  errMsj: string;
 
   
 
@@ -36,7 +36,8 @@ ngOnInit(): void {
 } 
 
 onLogin(): void{
-  this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); this.authService.login(this.loginUsuario).subscribe(data =>{
+  this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+  this.authService.login(this.loginUsuario).subscribe(data =>{
       this.isLogged = true;
       this.isLogginFail = false;
       this.tokenService.setToken(data.token);

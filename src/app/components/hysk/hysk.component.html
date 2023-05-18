@@ -1,24 +1,27 @@
 <div class="row">
-  
+  <div class="col-lg-12">
   <h1>Hard & soft skills</h1>
-<div class="col-lg-2">
+  </div>
+<div class="col-lg-12">
   <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva skill</button>
 </div>
   
 <div class="row container-fluid">
      <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
+     <div id="circulo">
       <circle-progress
+      [responsive]="true"
       [percent]="(skill.porcentaje)"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [showUnits]="false"
+      [radius]="75"
+      [outerStrokeWidth]="10"
+      [showUnits]="true"
       [innerStrokeWidth]="8"
       [outerStrokeColor]="'#4882c2'"
       [innerStrokeColor]="'#e2bde9'"
       [animation]="true"
       [animationDuration]="700"
       [imageSrc]="''"
-      [title]="(skill.nombreSK)"
+      [title]=""
       [showSubtitle]="false"
       [showTitle]="true"
       [titleColor]="'black'"
@@ -26,11 +29,11 @@
       [imageHeight]="100"
       [imageWidth]="100"
     ></circle-progress>
-
+      </div>
     <button id="edit">
-      <td> <button class="btn btn-light" routerLink="/editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
+      <td> <button class="btn btn-light" routerLink="editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i>{{" "+ skill.nombreSK}}</button>
     </button>
-    <br>
+    
     <button id="delete">
       <td> <button class="btn btn-danger" (click)="delete(skill.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill"></i></button>
     </button>

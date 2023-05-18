@@ -11,8 +11,20 @@ app-social{
     margin-right: 20px;
 }
 
-.btn{
-    float: left;
-    margin-top: 10px;
-    margin-left: 35px
+button{
+    
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
+@media(max-width:400px){
+    button{
+     margin-left: 31%;
+    }
+}
+
+@media(max-width:400px){
+app-social{
+    margin-right: 20%;
+}
 }
