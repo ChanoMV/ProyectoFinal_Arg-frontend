@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SExperienciaService {
   static detail(id: any) {}
-  URL = environment.URL +'/explab'
+  URL = environment.URL +'explab'
 
   constructor(private httpClient: HttpClient) { }
 

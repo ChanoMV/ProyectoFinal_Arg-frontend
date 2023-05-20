@@ -11,7 +11,7 @@ export class SEducacionService {
   static detail(id: any) {
     throw new Error('Method not implemented.');
   }
-  URL = environment.URL +'/edu'
+  URL = environment.URL +'edu'
 
   constructor(private httpClient: HttpClient) { }
 

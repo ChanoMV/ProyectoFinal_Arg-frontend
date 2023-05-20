@@ -11,8 +11,8 @@ import { EditSkillComponent } from './components/hysk/edit-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent},
-  {path:'login', component: LoginComponent},
+  {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'nuevaexp', component: NewExperienciaComponent},
   {path: 'editexp/:id', component: EditExperienciaComponent},
   {path: 'nuevaedu', component: NewEducacionComponent},

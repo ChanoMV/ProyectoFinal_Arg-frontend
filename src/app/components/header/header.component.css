@@ -18,13 +18,17 @@ button{
 }
 
 @media(max-width:400px){
-    button{
+   #ingreso{
+    margin-left: 38%;
+   }
+
+    #cerrar{
      margin-left: 31%;
     }
 }
 
 @media(max-width:400px){
 app-social{
-    margin-right: 20%;
+    margin-right: 19.5%;
 }
 }

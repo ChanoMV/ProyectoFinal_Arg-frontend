@@ -14,15 +14,18 @@
       [percent]="(skill.porcentaje)"
       [radius]="75"
       [outerStrokeWidth]="10"
-      [showUnits]="true"
+      [showUnits]="false"
       [innerStrokeWidth]="8"
       [outerStrokeColor]="'#4882c2'"
       [innerStrokeColor]="'#e2bde9'"
       [animation]="true"
       [animationDuration]="700"
       [imageSrc]="''"
-      [title]=""
-      [showSubtitle]="false"
+      [title]="(skill.nombreSK)"
+      [subtitle]="(skill.porcentaje).toString()"
+      [showSubtitle]="true"
+      [subtitleColor]="'blue'"
+      [subtitleFontSize]="'15'"
       [showTitle]="true"
       [titleColor]="'black'"
       [showImage]="false"
@@ -31,7 +34,7 @@
     ></circle-progress>
       </div>
     <button id="edit">
-      <td> <button class="btn btn-light" routerLink="editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i>{{" "+ skill.nombreSK}}</button>
+      <td> <button class="btn btn-light" routerLink="editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
     </button>
     
     <button id="delete">

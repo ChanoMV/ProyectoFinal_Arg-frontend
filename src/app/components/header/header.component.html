@@ -2,8 +2,8 @@
     <div class="col-12">
     <app-logo-ap></app-logo-ap>
     <div id="social"><app-social></app-social></div>
-    <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-    <button type="button" class="btn btn-outline-light" (click)="onlogOut()" *ngIf="isLogged">CERRAR SESION</button>
+    <button type="button" class="btn btn-outline-light" id="ingreso" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+    <button type="button" class="btn btn-outline-light" id="cerrar" (click)="onlogOut()" *ngIf="isLogged">CERRAR SESION</button>
     <app-banner></app-banner>
 
     </div>

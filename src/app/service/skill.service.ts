@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SkillService {
   static detail(id: any){}
-  URL= environment.URL +'/skills';
+  URL= environment.URL +'skills';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{

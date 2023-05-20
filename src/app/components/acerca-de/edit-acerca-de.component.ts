@@ -31,7 +31,7 @@ export class EditAcercaDeComponent implements OnInit {
     }
   persona: persona = null;
 
-  onUpdate(){
+  onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.persona.img = this.imageService.url
     this.personaService.update(id, this.persona).subscribe(
@@ -44,7 +44,7 @@ export class EditAcercaDeComponent implements OnInit {
         this.router.navigate([''])
       }
     )
-
+ 
   }
   
 
