@@ -4,6 +4,7 @@ export class persona{
     apellidoAC: string;
     descripcionAC: string;
     img: string;
+ 
 
     constructor(nombreAC: string,apellidoAC: string,img: string,  descripcionAC: string){
         this.nombreAC = nombreAC;
